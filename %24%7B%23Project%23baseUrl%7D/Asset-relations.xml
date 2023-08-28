@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:con="http://eviware.com/soapui/config" name="Asset-relations" path="/api/restify/asset-relations" id="2e22d7b6-712f-46f3-9368-704c9fdd4189">
+  <con:settings id="2ad67127-2f44-483f-9024-2d3d98c792d1">
+    <con:setting id="2e22d7b6-712f-46f3-9368-704c9fdd4189fileName">Asset-relations</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="Asset-relations" id="5febc3e3-5396-46b9-be01-ebfe62f319c6" method="GET">
+    <con:settings/>
+    <con:parameters/>
+    <con:request name="assets-relations" id="6d5a3b58-110c-4615-a2d6-1e8c543d324d" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>${#Project#baseUrl}</con:endpoint>
+      <con:credentials/>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

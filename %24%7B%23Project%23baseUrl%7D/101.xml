@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="101" path="/api/restify/tags/101" id="537e22ea-24d8-41e7-b937-42a590cd2e51">
+  <con:settings id="3e18bc34-fbb7-481d-8d73-49f310efc6b5">
+    <con:setting id="537e22ea-24d8-41e7-b937-42a590cd2e51fileName">101</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="101" id="6f6de5c7-ab9f-4a9c-9726-acca0f5411f1" method="DELETE">
+    <con:settings/>
+    <con:parameters>
+      <con:parameter>
+        <con:name>Accept</con:name>
+        <con:value>application/json</con:value>
+        <con:style>HEADER</con:style>
+        <con:default/>
+        <con:path xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter>
+        <con:name>Content-Type</con:name>
+        <con:value>application/json</con:value>
+        <con:style>HEADER</con:style>
+        <con:default/>
+        <con:path xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+    </con:parameters>
+    <con:request name="POST Tag Type" id="a014134e-6636-4168-9a0b-3114074d5de2" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>${#Project#baseUrl}</con:endpoint>
+      <con:request>{\r
+    "name": "UWC",\r
+    "code": "uwc",\r
+    "description": ""\r
+}</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters>
+        <con:entry key="Accept" value="application/json"/>
+        <con:entry key="Content-Type" value="application/json"/>
+      </con:parameters>
+      <con:parameterOrder>
+        <con:entry>Accept</con:entry>
+        <con:entry>Content-Type</con:entry>
+      </con:parameterOrder>
+    </con:request>
+  </con:method>
+</con:resource>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="Models" path="/api/restify/models" id="115ee829-7caa-4f23-91d8-5a231941fcc2">
+  <con:settings id="73f4e546-3981-4df2-a646-1527f23db1fe">
+    <con:setting id="115ee829-7caa-4f23-91d8-5a231941fcc2fileName">Models</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="Models" id="77029a08-fe52-4626-83d5-242fb932f72e" method="POST">
+    <con:settings/>
+    <con:parameters>
+      <con:parameter>
+        <con:name>Accept</con:name>
+        <con:value>application/json</con:value>
+        <con:style>HEADER</con:style>
+        <con:default/>
+        <con:path xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter>
+        <con:name>Content-Type</con:name>
+        <con:value>application/json</con:value>
+        <con:style>HEADER</con:style>
+        <con:default/>
+        <con:path xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+    </con:parameters>
+    <con:request name="POST Models" id="1ae56cd7-4116-4e38-960e-4d8953419c64" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>${#Project#baseUrl}</con:endpoint>
+      <con:request>{\r
+    "brand_id": 1,\r
+    "name": "Pavilion",\r
+    "code": "01",\r
+    "id": 2,\r
+    "description": "Pavilion",\r
+    "updated_at":"2023-07-21 12:51:14"\r
+}</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters>
+        <con:entry key="Accept" value="application/json"/>
+        <con:entry key="Content-Type" value="application/json"/>
+      </con:parameters>
+      <con:parameterOrder>
+        <con:entry>Accept</con:entry>
+        <con:entry>Content-Type</con:entry>
+      </con:parameterOrder>
+    </con:request>
+  </con:method>
+</con:resource>

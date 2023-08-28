@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="35" path="/api/restify/assets/35" id="c2622ff6-5d91-45e0-8322-97b11a9e6537">
+  <con:settings id="1dccf7cb-d6f6-4c06-814a-344768f1ceb6">
+    <con:setting id="c2622ff6-5d91-45e0-8322-97b11a9e6537fileName">35</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="35" id="2a358b5e-3d6e-48dc-b293-21c299eb158f" method="PATCH">
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>include</con:name>
+        <con:value>tags,type,localizations.children,users,model.brands</con:value>
+        <con:style>QUERY</con:style>
+        <con:default>tags,type,localizations.children,users,model.brands</con:default>
+        <con:path xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter>
+        <con:name>Content-Type</con:name>
+        <con:value>application/json</con:value>
+        <con:style>HEADER</con:style>
+        <con:default/>
+        <con:path xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter>
+        <con:name>Accept</con:name>
+        <con:value>application/json</con:value>
+        <con:style>HEADER</con:style>
+        <con:default/>
+        <con:path xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+    </con:parameters>
+    <con:request name="PATCH Location EDIT" id="ea6e469c-6f9d-4f00-93d1-5e3fca2a5dbf" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://${#Project#baseUrl}</con:endpoint>
+      <con:request>{\r
+    "sub_family_type_id": 303,\r
+    "internal_code": null,\r
+    "tag_id": 673,\r
+    "tag_localization": null,\r
+    "old_tag": null,\r
+    "localization_id": 7,\r
+    "length": null,\r
+    "measures": null,\r
+    "serial_number": null,\r
+    "registration_number": null,\r
+    "frame_number": null,\r
+    "author": null,\r
+    "technique": null,\r
+    "kind": null,\r
+    "numbering": null,\r
+    "nominal_value": null,\r
+    "expedient": null,\r
+    "albaran_number": null,\r
+    "invoice_number": null,\r
+    "property": null,\r
+    "construction_year": null,\r
+    "rehabilitation_year": null,\r
+    "ground_surface": null,\r
+    "built_surface": null,\r
+    "value": null,\r
+    "description": null\r
+}</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters>
+        <con:entry key="include" value="tags,type,localizations.children,users,model.brands"/>
+        <con:entry key="Accept" value="application/json"/>
+        <con:entry key="Content-Type" value="application/json"/>
+      </con:parameters>
+      <con:parameterOrder>
+        <con:entry>include</con:entry>
+        <con:entry>Content-Type</con:entry>
+        <con:entry>Accept</con:entry>
+      </con:parameterOrder>
+    </con:request>
+  </con:method>
+  <con:method name="35 2" id="6cd4e2e1-e8e0-491b-b62e-1603d0711f96" method="PATCH">
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>include</con:name>
+        <con:value>tags,type,localizations.children,users,model.brands</con:value>
+        <con:style>QUERY</con:style>
+        <con:default>tags,type,localizations.children,users,model.brands</con:default>
+        <con:path xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter>
+        <con:name>Content-Type</con:name>
+        <con:value>application/json</con:value>
+        <con:style>HEADER</con:style>
+        <con:default/>
+        <con:path xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter>
+        <con:name>Accept</con:name>
+        <con:value>application/json</con:value>
+        <con:style>HEADER</con:style>
+        <con:default/>
+        <con:path xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+    </con:parameters>
+    <con:request name="PATCH Location EDIT Copy" id="37c3052f-29e6-4626-b49a-f1fb020c448c" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://${#Project#baseUrl}</con:endpoint>
+      <con:request>{\r
+    "sub_family_type_id": 303,\r
+    "internal_code": null,\r
+    "tag_id": 673,\r
+    "tag_localization": null,\r
+    "old_tag": null,\r
+    "localization_id": 7,\r
+    "length": null,\r
+    "measures": null,\r
+    "serial_number": null,\r
+    "registration_number": null,\r
+    "frame_number": null,\r
+    "author": null,\r
+    "technique": null,\r
+    "kind": null,\r
+    "numbering": null,\r
+    "nominal_value": null,\r
+    "expedient": null,\r
+    "albaran_number": null,\r
+    "invoice_number": null,\r
+    "property": null,\r
+    "construction_year": null,\r
+    "rehabilitation_year": null,\r
+    "ground_surface": null,\r
+    "built_surface": null,\r
+    "value": null,\r
+    "description": null\r
+}</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters>
+        <con:entry key="include" value="tags,type,localizations.children,users,model.brands"/>
+        <con:entry key="Accept" value="application/json"/>
+        <con:entry key="Content-Type" value="application/json"/>
+      </con:parameters>
+      <con:parameterOrder>
+        <con:entry>include</con:entry>
+        <con:entry>Content-Type</con:entry>
+        <con:entry>Accept</con:entry>
+      </con:parameterOrder>
+    </con:request>
+  </con:method>
+</con:resource>

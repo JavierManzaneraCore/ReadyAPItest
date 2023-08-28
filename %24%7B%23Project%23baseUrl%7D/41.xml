@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="4" path="/api/restify/tag-codifications/4" id="8459dcd0-eac1-4a5d-ad0b-f0e4e0771874">
+  <con:settings id="e4025f64-8c35-4027-a551-1ceb26979267">
+    <con:setting id="8459dcd0-eac1-4a5d-ad0b-f0e4e0771874fileName">41</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="4" id="b967c758-c76d-4283-b491-1c2d49c68267" method="DELETE">
+    <con:settings/>
+    <con:parameters>
+      <con:parameter>
+        <con:name>Accept</con:name>
+        <con:value>application/json</con:value>
+        <con:style>HEADER</con:style>
+        <con:default/>
+        <con:path xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter>
+        <con:name>Content-Type</con:name>
+        <con:value>application/json</con:value>
+        <con:style>HEADER</con:style>
+        <con:default/>
+        <con:path xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+    </con:parameters>
+    <con:request name="Borrar Tag Codification" id="8bf3d650-db52-466c-a3ce-58a9f62841ce" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>${#Project#baseUrl}</con:endpoint>
+      <con:credentials/>
+      <con:parameters>
+        <con:entry key="Accept" value="application/json"/>
+        <con:entry key="Content-Type" value="application/json"/>
+      </con:parameters>
+      <con:parameterOrder>
+        <con:entry>Accept</con:entry>
+        <con:entry>Content-Type</con:entry>
+      </con:parameterOrder>
+    </con:request>
+  </con:method>
+</con:resource>

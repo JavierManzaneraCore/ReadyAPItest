@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="Register" path="/api/security/register" id="87876319-4559-455c-9491-dfde4848db90">
+  <con:settings id="906c39e3-10cf-4a5f-9300-0af0e4c6fc5d">
+    <con:setting id="87876319-4559-455c-9491-dfde4848db90fileName">Register</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="Register" id="4c2dd2e4-0b56-4ca9-b77a-ffdcc4e33dab" method="POST">
+    <con:settings/>
+    <con:parameters>
+      <con:parameter>
+        <con:name>Accept</con:name>
+        <con:value>application/json</con:value>
+        <con:style>HEADER</con:style>
+        <con:default/>
+        <con:path xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter>
+        <con:name>Content-Type</con:name>
+        <con:value>application/json</con:value>
+        <con:style>HEADER</con:style>
+        <con:default/>
+        <con:path xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+    </con:parameters>
+    <con:request name="POST register user" id="5cb960b2-8add-4640-8292-fb7067feaba3" mediaType="application/json" postQueryString="false">
+      <con:settings>
+        <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+      </con:settings>
+      <con:endpoint>${#Project#baseUrl}</con:endpoint>
+      <con:request>{\r
+    "name": "Javier",\r
+    "last_name": "Manzanera Pascual de Riquelme",\r
+    "email": "javier.manzanera@coresolutions.es",\r
+    "password" : "Secret.,.123",\r
+    "password_confirmation":"Secret.,.123",\r
+    "role_id":1\r
+}</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters>
+        <con:entry key="Accept" value="application/json"/>
+        <con:entry key="Content-Type" value="application/json"/>
+      </con:parameters>
+      <con:parameterOrder>
+        <con:entry>Accept</con:entry>
+        <con:entry>Content-Type</con:entry>
+      </con:parameterOrder>
+    </con:request>
+  </con:method>
+</con:resource>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="Bi-reports" path="/api/restify/assets/4/getters/bi-reports" id="e2f5c6e9-8d10-4d03-b1d7-f3b8f0057df8">
+  <con:settings id="11082a14-42fa-4356-806e-bf9019f4f1d6">
+    <con:setting id="e2f5c6e9-8d10-4d03-b1d7-f3b8f0057df8fileName">Bi-reports</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="Bi-reports" id="2b2cf4df-0143-46e6-ae26-39258c9d1075" method="GET">
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>report_type</con:name>
+        <con:value>asset</con:value>
+        <con:style>QUERY</con:style>
+        <con:default>asset</con:default>
+        <con:path xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+    </con:parameters>
+    <con:request name="Assets Generate report" id="d7036c8e-2a19-46df-9819-778a59858e89" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>${#Project#baseUrl}</con:endpoint>
+      <con:credentials/>
+      <con:parameters>
+        <con:entry key="report_type" value="asset"/>
+      </con:parameters>
+      <con:parameterOrder>
+        <con:entry>report_type</con:entry>
+      </con:parameterOrder>
+    </con:request>
+  </con:method>
+</con:resource>

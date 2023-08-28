@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="Fast360Cloud" path="/api/Auth/login/Fast360Cloud" id="ee6c6185-248b-4600-92a5-13aa2a00a05c">
+  <con:settings id="fff6b53f-ebe1-4163-8532-e8fcc60df008">
+    <con:setting id="ee6c6185-248b-4600-92a5-13aa2a00a05cfileName">Fast360Cloud</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="Fast360Cloud" id="2aefa722-1395-4d2f-9c34-4952e4ec853c" method="POST">
+    <con:settings/>
+    <con:parameters>
+      <con:parameter>
+        <con:name>Content-Type</con:name>
+        <con:value>application/json</con:value>
+        <con:style>HEADER</con:style>
+        <con:default/>
+        <con:path xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter>
+        <con:name>Accept</con:name>
+        <con:value>application/json</con:value>
+        <con:style>HEADER</con:style>
+        <con:default/>
+        <con:path xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+    </con:parameters>
+    <con:request name="Login a user. Copy" id="c9da1c36-a825-43ff-9689-40c5a2baffa2" mediaType="application/json" postQueryString="false">
+      <con:settings/>
+      <con:endpoint>https://blackbox.fast360cloud.com</con:endpoint>
+      <con:request>{"asociacion":"prosenor","passcodigoCliente":"00001","login":"Silvia","password":"Prosenor38"}</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters>
+        <con:entry key="Accept" value="application/json"/>
+        <con:entry key="Content-Type" value="application/json"/>
+      </con:parameters>
+      <con:parameterOrder>
+        <con:entry>Content-Type</con:entry>
+        <con:entry>Accept</con:entry>
+      </con:parameterOrder>
+    </con:request>
+  </con:method>
+</con:resource>

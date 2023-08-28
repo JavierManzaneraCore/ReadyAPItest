@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="Generic-asset-saps" path="/api/restify/generic-asset-saps" id="45717348-cc31-440a-8e12-4660426fe69b">
+  <con:settings id="2d44a527-63dd-4eb5-a104-5c193fff85f4">
+    <con:setting id="45717348-cc31-440a-8e12-4660426fe69bfileName">Generic-asset-saps</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="Generic-asset-saps" id="68119529-7436-46c5-821e-5085ad71d435" method="GET">
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>sort</con:name>
+        <con:value>id</con:value>
+        <con:style>QUERY</con:style>
+        <con:default>id</con:default>
+        <con:path xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>verified</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:default/>
+        <con:path xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+    </con:parameters>
+    <con:request name="External data/ Index" id="a293a9f4-9ad6-45c0-9a82-a2f436ded411" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>${#Project#baseUrl}</con:endpoint>
+      <con:credentials/>
+      <con:parameters>
+        <con:entry key="verified" value=""/>
+        <con:entry key="sort" value="id"/>
+      </con:parameters>
+      <con:parameterOrder>
+        <con:entry>sort</con:entry>
+        <con:entry>verified</con:entry>
+      </con:parameterOrder>
+    </con:request>
+  </con:method>
+</con:resource>

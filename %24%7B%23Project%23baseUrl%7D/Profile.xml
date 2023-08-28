@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="Profile" path="/api/restify/profile" id="05bd2c10-f9da-46ea-a3b1-f1a0cc279397">
+  <con:settings id="795e40b0-19b8-4ce7-bd69-340c7bcef339">
+    <con:setting id="05bd2c10-f9da-46ea-a3b1-f1a0cc279397fileName">Profile</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="Profile" id="e88fa4a0-f8e9-4bbe-8f9b-75bf724778ab" method="GET">
+    <con:settings/>
+    <con:parameters>
+      <con:parameter>
+        <con:name>Accept</con:name>
+        <con:value>application/json</con:value>
+        <con:style>HEADER</con:style>
+        <con:default/>
+        <con:path xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter>
+        <con:name>Content-Type</con:name>
+        <con:value>application/json</con:value>
+        <con:style>HEADER</con:style>
+        <con:default/>
+        <con:path xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+    </con:parameters>
+    <con:request name="Edit User" id="04058435-7fd2-48ab-953d-939b5ee03b2f" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>${#Project#baseUrl}</con:endpoint>
+      <con:credentials/>
+      <con:parameters>
+        <con:entry key="Accept" value="application/json"/>
+        <con:entry key="Content-Type" value="application/json"/>
+      </con:parameters>
+      <con:parameterOrder>
+        <con:entry>Accept</con:entry>
+        <con:entry>Content-Type</con:entry>
+      </con:parameterOrder>
+    </con:request>
+  </con:method>
+  <con:method name="Profile 2" id="b242b66b-aa05-4893-8dff-b7341a799cfa" method="GET">
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>related</con:name>
+        <con:value>roles</con:value>
+        <con:style>QUERY</con:style>
+        <con:default>roles</con:default>
+        <con:path xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+    </con:parameters>
+    <con:request name="User Profile" id="69c361c8-68a1-4f48-8e3b-6b263af924b6" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>${#Project#baseUrl}</con:endpoint>
+      <con:credentials/>
+      <con:parameters>
+        <con:entry key="related" value="roles"/>
+      </con:parameters>
+      <con:parameterOrder>
+        <con:entry>related</con:entry>
+      </con:parameterOrder>
+    </con:request>
+  </con:method>
+</con:resource>

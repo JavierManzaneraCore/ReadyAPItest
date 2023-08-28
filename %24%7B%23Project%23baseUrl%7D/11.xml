@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="11" path="/api/restify/users/11" id="7c7c37f2-51ca-4e10-849c-37992a89a9fe">
+  <con:settings id="b85d44a0-5b12-437a-98a6-b401d54c6031">
+    <con:setting id="7c7c37f2-51ca-4e10-849c-37992a89a9fefileName">11</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="11" id="11077682-96cb-4054-a7ee-2da11a70bc75" method="POST">
+    <con:settings/>
+    <con:parameters>
+      <con:parameter>
+        <con:name>Content-Type</con:name>
+        <con:value>application/json</con:value>
+        <con:style>HEADER</con:style>
+        <con:default/>
+        <con:path xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter>
+        <con:name>Accept</con:name>
+        <con:value>application/json</con:value>
+        <con:style>HEADER</con:style>
+        <con:default/>
+        <con:path xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+    </con:parameters>
+    <con:request name="GET api/restify/users/{id}" id="fbbfef5f-3f11-4307-8c26-198756c095db" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>${#Project#baseUrl}</con:endpoint>
+      <con:request>{\r
+    "last_name": "coresolutions"\r
+}</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters>
+        <con:entry key="Accept" value="application/json"/>
+        <con:entry key="Content-Type" value="application/json"/>
+      </con:parameters>
+      <con:parameterOrder>
+        <con:entry>Content-Type</con:entry>
+        <con:entry>Accept</con:entry>
+      </con:parameterOrder>
+    </con:request>
+  </con:method>
+  <con:method name="11 2" id="c11003c8-46ff-4c99-992e-96f6736c71d3" method="POST">
+    <con:settings/>
+    <con:parameters>
+      <con:parameter>
+        <con:name>Accept</con:name>
+        <con:value>application/json</con:value>
+        <con:style>HEADER</con:style>
+        <con:default/>
+        <con:path xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+    </con:parameters>
+    <con:request name="User Profile Edit" id="75812010-5ada-4e74-8049-7726bc8e24ad" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>${#Project#baseUrl}</con:endpoint>
+      <con:request>{\r
+"name":"Operador Actualizad"\r
+}</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters>
+        <con:entry key="Accept" value="application/json"/>
+      </con:parameters>
+      <con:parameterOrder>
+        <con:entry>Accept</con:entry>
+      </con:parameterOrder>
+    </con:request>
+  </con:method>
+</con:resource>

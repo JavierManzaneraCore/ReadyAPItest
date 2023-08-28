@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="Natures" path="/api/restify/natures" id="45359f5c-6925-4d94-8ed9-a98caac4d4ba">
+  <con:settings id="5a3b0b2d-948d-4845-9c21-ff36e16c5690">
+    <con:setting id="45359f5c-6925-4d94-8ed9-a98caac4d4bafileName">Natures</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="Natures" id="5bdcb07a-60f6-4f97-b609-ea43d71d1632" method="POST">
+    <con:settings/>
+    <con:parameters>
+      <con:parameter>
+        <con:name>Content-Type</con:name>
+        <con:value>application/json</con:value>
+        <con:style>HEADER</con:style>
+        <con:default/>
+        <con:path xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter>
+        <con:name>Accept</con:name>
+        <con:value>application/json</con:value>
+        <con:style>HEADER</con:style>
+        <con:default/>
+        <con:path xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+    </con:parameters>
+    <con:request name="POST Store Natures" id="ac57384f-a375-44e7-ae3b-e509c4ddc750" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>${#Project#baseUrl}</con:endpoint>
+      <con:request>{\r
+    "code": "26",\r
+    "alias": "Jardinería 7",\r
+    "description": "Arbolado y equipamiento de jardinería 3",\r
+    "icon": "",\r
+    "enabled": true\r
+}</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters>
+        <con:entry key="Accept" value="application/json"/>
+        <con:entry key="Content-Type" value="application/json"/>
+      </con:parameters>
+      <con:parameterOrder>
+        <con:entry>Content-Type</con:entry>
+        <con:entry>Accept</con:entry>
+      </con:parameterOrder>
+    </con:request>
+  </con:method>
+</con:resource>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="Actions" path="/api/restify/tags/actions" id="346e5051-2cc9-4052-862c-ce57c5f3e8dc">
+  <con:settings id="8a4331de-c534-4c70-8262-23574d14f64a">
+    <con:setting id="346e5051-2cc9-4052-862c-ce57c5f3e8dcfileName">Actions2</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="Actions" id="8e37b7a9-61d6-4d3e-8ac7-5419e472d582" method="POST">
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>action</con:name>
+        <con:value>reserve</con:value>
+        <con:style>QUERY</con:style>
+        <con:default>reserve</con:default>
+        <con:path xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+    </con:parameters>
+    <con:request name="POST Reserve Tags" id="eff18064-d7dc-4fd2-b23d-5a08cbff4e4a" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>${#Project#baseUrl}</con:endpoint>
+      <con:request>{\r
+    "from": "100010",\r
+    "to": "100013",\r
+    "generator": "numeric",\r
+    "reserve_for": 1\r
+}</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters>
+        <con:entry key="action" value="reserve"/>
+      </con:parameters>
+      <con:parameterOrder>
+        <con:entry>action</con:entry>
+      </con:parameterOrder>
+    </con:request>
+  </con:method>
+  <con:method name="Actions 2" id="dff10e69-abc2-4a0e-94c3-cf2a6129f287" method="POST">
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>action</con:name>
+        <con:value>reserve</con:value>
+        <con:style>QUERY</con:style>
+        <con:default>reserve</con:default>
+        <con:path xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+    </con:parameters>
+    <con:request name="POST CANCEL Reserve Tags" id="dce8fe3e-85e2-480e-9e50-05270591b400" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>${#Project#baseUrl}</con:endpoint>
+      <con:request>{\r
+    "from": "100010",\r
+    "to": "100013",\r
+    "generator": "numeric",\r
+    "reserve_for": 1\r
+}</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters>
+        <con:entry key="action" value="reserve"/>
+      </con:parameters>
+      <con:parameterOrder>
+        <con:entry>action</con:entry>
+      </con:parameterOrder>
+    </con:request>
+  </con:method>
+</con:resource>

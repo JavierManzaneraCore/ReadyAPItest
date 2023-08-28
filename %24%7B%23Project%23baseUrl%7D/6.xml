@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="6" path="/api/restify/localizations/6" id="d405a7ec-d737-4d00-8c0c-c11853d27464">
+  <con:settings id="02f3eade-1e4e-4a48-8acc-63b11e9c2bc2">
+    <con:setting id="d405a7ec-d737-4d00-8c0c-c11853d27464fileName">6</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="6" id="9be8770b-34d0-480e-b831-e5122c227db9" method="POST">
+    <con:settings/>
+    <con:parameters>
+      <con:parameter>
+        <con:name>Content-Type</con:name>
+        <con:value>application/json</con:value>
+        <con:style>HEADER</con:style>
+        <con:default/>
+        <con:path xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter>
+        <con:name>Accept</con:name>
+        <con:value>application/json</con:value>
+        <con:style>HEADER</con:style>
+        <con:default/>
+        <con:path xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+    </con:parameters>
+    <con:request name="POST Store Localizations" id="87238a71-81c3-4822-863f-c6ede89d1209" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>${#Project#baseUrl}</con:endpoint>
+      <con:request>{\r
+    "name": "Edificio 6 ",\r
+    "localization_type_id": 5,\r
+    "parent_id": 3\r
+}\r
+    //"code": "01/0327564654664"\r
+    //"description": "Edificio B otro",\r
+    //"parent_id": 3,\r
+    //"localization_type_id": 4</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters>
+        <con:entry key="Accept" value="application/json"/>
+        <con:entry key="Content-Type" value="application/json"/>
+      </con:parameters>
+      <con:parameterOrder>
+        <con:entry>Content-Type</con:entry>
+        <con:entry>Accept</con:entry>
+      </con:parameterOrder>
+    </con:request>
+  </con:method>
+</con:resource>

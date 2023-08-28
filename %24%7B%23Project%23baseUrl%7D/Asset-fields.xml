@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="Asset-fields" path="/api/restify/asset-fields" id="e69ab4a2-0b76-4827-9d22-ce053a40685b">
+  <con:settings id="1982b8d5-6d62-4cbf-a688-0f395442802d">
+    <con:setting id="e69ab4a2-0b76-4827-9d22-ce053a40685bfileName">Asset-fields</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="Asset-fields" id="b34f3b17-95d1-4731-b8ab-ef1f47db9a5f" method="GET">
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>page[size]</con:name>
+        <con:value>100</con:value>
+        <con:style>QUERY</con:style>
+        <con:default>100</con:default>
+        <con:path xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+    </con:parameters>
+    <con:request name="GET Asset-field" id="ba3a75e8-a8bf-4007-9539-ef472a00a1f4" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>${#Project#baseUrl}</con:endpoint>
+      <con:credentials/>
+      <con:parameters>
+        <con:entry key="page[size]" value="100"/>
+      </con:parameters>
+      <con:parameterOrder>
+        <con:entry>page[size]</con:entry>
+      </con:parameterOrder>
+    </con:request>
+  </con:method>
+</con:resource>

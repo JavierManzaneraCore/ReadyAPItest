@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="Sub-families" path="/api/restify/sub-families" id="0a65d1a0-4a19-4d0e-b07a-8c783eecc38c">
+  <con:settings id="11c21c19-706d-4a75-ace0-4d9cf60980e3">
+    <con:setting id="0a65d1a0-4a19-4d0e-b07a-8c783eecc38cfileName">Sub-families</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="Sub-families" id="28aa4ddc-237c-4156-a053-70530e71c732" method="GET">
+    <con:settings/>
+    <con:parameters>
+      <con:parameter>
+        <con:name>Content-Type</con:name>
+        <con:value>application/json</con:value>
+        <con:style>HEADER</con:style>
+        <con:default/>
+        <con:path xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter>
+        <con:name>Accept</con:name>
+        <con:value>application/json</con:value>
+        <con:style>HEADER</con:style>
+        <con:default/>
+        <con:path xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+    </con:parameters>
+    <con:request name="GET Subfamilies" id="0309cb79-719b-4d00-9ee1-cecd182deae5" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>${#Project#baseUrl}</con:endpoint>
+      <con:credentials/>
+      <con:parameters>
+        <con:entry key="Accept" value="application/json"/>
+        <con:entry key="Content-Type" value="application/json"/>
+      </con:parameters>
+      <con:parameterOrder>
+        <con:entry>Content-Type</con:entry>
+        <con:entry>Accept</con:entry>
+      </con:parameterOrder>
+    </con:request>
+  </con:method>
+  <con:method name="Sub-families 2" id="183c7a8b-c6ae-4290-85db-b77b2f909b59" method="GET">
+    <con:settings/>
+    <con:parameters/>
+    <con:request name="GET Movility Type" id="61b9d664-aab1-4e28-9dc8-b237fdf37a98" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>${#Project#baseUrl}</con:endpoint>
+      <con:credentials/>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

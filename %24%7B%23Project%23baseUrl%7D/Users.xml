@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="Users" path="/api/restify/users" id="bd15a095-eca7-4655-80dc-d5ddaf818860">
+  <con:settings id="a215889a-b299-4eac-99ce-d35dffd5fc3a">
+    <con:setting id="bd15a095-eca7-4655-80dc-d5ddaf818860fileName">Users</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="Users" id="bd8b33d4-1761-4661-af81-7374e5398d1a" method="GET">
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>search</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:default/>
+        <con:path xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter>
+        <con:name>Content-Type</con:name>
+        <con:value>application/json</con:value>
+        <con:style>HEADER</con:style>
+        <con:default/>
+        <con:path xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter>
+        <con:name>Accept</con:name>
+        <con:value>application/json</con:value>
+        <con:style>HEADER</con:style>
+        <con:default/>
+        <con:path xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>Authorization</con:name>
+        <con:value/>
+        <con:style>HEADER</con:style>
+        <con:default/>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="FAULT">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>401</con:status>
+      <con:params/>
+      <con:element xmlns:user="https://assets-service.coreinvent.es/api/restify/users">user:Fault</con:element>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:element xmlns:user="https://assets-service.coreinvent.es/api/restify/users">user:Response</con:element>
+    </con:representation>
+    <con:request name="GET api/restify/users index" id="76b57de5-8741-41f8-9e61-bcf61c7fb677" mediaType="application/json">
+      <con:settings>
+        <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+      </con:settings>
+      <con:endpoint>${#Project#baseUrl}</con:endpoint>
+      <con:request/>
+      <con:originalUri>https://assets-service.coreinvent.es/api/restify/users</con:originalUri>
+      <con:credentials>
+        <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters>
+        <con:entry key="search" value=""/>
+        <con:entry key="Accept" value="application/json"/>
+        <con:entry key="Content-Type" value="application/json"/>
+      </con:parameters>
+      <con:parameterOrder>
+        <con:entry>search</con:entry>
+        <con:entry>Content-Type</con:entry>
+        <con:entry>Accept</con:entry>
+        <con:entry>Authorization</con:entry>
+      </con:parameterOrder>
+    </con:request>
+  </con:method>
+</con:resource>

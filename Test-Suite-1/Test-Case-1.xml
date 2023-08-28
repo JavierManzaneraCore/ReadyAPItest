@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="bcb731ed-425a-4dd9-a5bb-b3ff75b590f6" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="Test Case 1" searchProperties="true" timeout="0">
+  <con:settings id="e457766f-f0b6-48b1-8f8f-331a1029cc36">
+    <con:setting id="bcb731ed-425a-4dd9-a5bb-b3ff75b590f6fileName">Test-Case-1</con:setting>
+  </con:settings>
+  <con:testStep type="restrequest" name="REST Request" id="80a6f4b1-4542-4db3-b828-5167c738f3cc">
+    <con:settings/>
+    <con:config service="${#Project#baseUrl}" resourcePath="/api/security/login" methodName="Login" xsi:type="con:RestRequestStep">
+      <con:restRequest name="REST Request" id="61846b38-fbab-428d-a6aa-722ab90ebb84" mediaType="application/json" postQueryString="false">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:endpoint>${#Project#baseUrl}</con:endpoint>
+        <con:request>{\r
+    "email": "admin@coresolutions.es",\r
+    "password": "Secret.,.123"\r
+}</con:request>
+        <con:originalUri>https://assets-service.coreinvent.es/api/security/login</con:originalUri>
+        <con:assertion type="Valid HTTP Status Codes" id="a672ddef-d881-4591-b53a-bf185f99d77a" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>200</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters>
+          <con:entry key="Accept" value="application/json"/>
+          <con:entry key="Content-Type" value="application/json"/>
+        </con:parameters>
+        <con:parameterOrder>
+          <con:entry>Content-Type</con:entry>
+          <con:entry>Accept</con:entry>
+        </con:parameterOrder>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="restrequest" name="REST Request 3" id="42708e01-7b3f-4d55-b6a0-4e0b8e04359a">
+    <con:settings/>
+    <con:config service="${#Project#baseUrl}" resourcePath="/api/restify/users" methodName="Users" xsi:type="con:RestRequestStep">
+      <con:restRequest name="REST Request 3" id="76b57de5-8741-41f8-9e61-bcf61c7fb677" mediaType="application/json">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:endpoint>${#Project#baseUrl}</con:endpoint>
+        <con:request/>
+        <con:originalUri>https://assets-service.coreinvent.es/api/restify/users</con:originalUri>
+        <con:assertion type="Valid HTTP Status Codes" id="88339a80-585e-4314-aedc-44bdcd5fa4fe" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>200</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters>
+          <con:entry key="Authorization" value="Bearer ${REST Request#Response#$['data']['login']['token']}"/>
+          <con:entry key="search" value=""/>
+          <con:entry key="Accept" value="application/json"/>
+          <con:entry key="Content-Type" value="application/json"/>
+        </con:parameters>
+        <con:parameterOrder>
+          <con:entry>search</con:entry>
+          <con:entry>Content-Type</con:entry>
+          <con:entry>Accept</con:entry>
+          <con:entry>Authorization</con:entry>
+        </con:parameterOrder>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

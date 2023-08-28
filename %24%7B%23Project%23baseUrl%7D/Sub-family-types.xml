@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="Sub-family-types" path="/api/restify/sub-family-types" id="f5c55d72-a881-4a49-8cd3-e27da8b4f050">
+  <con:settings id="d20e2456-06ea-490d-a1aa-383675805430">
+    <con:setting id="f5c55d72-a881-4a49-8cd3-e27da8b4f050fileName">Sub-family-types</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="Sub-family-types" id="5c7828cf-cb1b-4268-8d83-3e48374a71b6" method="POST">
+    <con:settings/>
+    <con:parameters>
+      <con:parameter>
+        <con:name>Content-Type</con:name>
+        <con:value>application/json</con:value>
+        <con:style>HEADER</con:style>
+        <con:default/>
+        <con:path xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter>
+        <con:name>Accept</con:name>
+        <con:value>application/json</con:value>
+        <con:style>HEADER</con:style>
+        <con:default/>
+        <con:path xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+    </con:parameters>
+    <con:request name="POST Store Subfamilies Type" id="2fd1ebe5-4ee1-45b2-894b-197525a34986" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>${#Project#baseUrl}</con:endpoint>
+      <con:request>{\r
+    "subfamily_id": 1,\r
+    "movility_type_id": 1,\r
+    "tag_technology_id": 2,\r
+    "description": "Creacion Tipo Prueba",\r
+    "observations": "",\r
+    "alias": "Prueba Prueba",\r
+    "picture_url": null,\r
+    "continent": "",\r
+    "tag_location": "",\r
+    "vrn": "0",\r
+    "code": "010101002999",\r
+    "enabled": true\r
+}</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters>
+        <con:entry key="Accept" value="application/json"/>
+        <con:entry key="Content-Type" value="application/json"/>
+      </con:parameters>
+      <con:parameterOrder>
+        <con:entry>Content-Type</con:entry>
+        <con:entry>Accept</con:entry>
+      </con:parameterOrder>
+    </con:request>
+  </con:method>
+</con:resource>

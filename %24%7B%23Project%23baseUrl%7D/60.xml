@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="60" path="/api/restify/asset-has-relations/60" id="e2f68cfb-aebf-4bec-a1fa-bd7f455ca5f3">
+  <con:settings id="6b39a867-3a4b-42af-bc49-b20365fdfe84">
+    <con:setting id="e2f68cfb-aebf-4bec-a1fa-bd7f455ca5f3fileName">60</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="60" id="0077f082-b8e0-4291-a594-c78491e9bf84" method="DELETE">
+    <con:settings/>
+    <con:parameters>
+      <con:parameter>
+        <con:name>Accept</con:name>
+        <con:value>application/json</con:value>
+        <con:style>HEADER</con:style>
+        <con:default/>
+        <con:path xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+    </con:parameters>
+    <con:request name="Asset relation delete" id="75d91934-4cb4-4ab5-970a-d15bd6f594aa" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>${#Project#baseUrl}</con:endpoint>
+      <con:credentials/>
+      <con:parameters>
+        <con:entry key="Accept" value="application/json"/>
+      </con:parameters>
+      <con:parameterOrder>
+        <con:entry>Accept</con:entry>
+      </con:parameterOrder>
+    </con:request>
+  </con:method>
+</con:resource>

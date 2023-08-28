@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="Localizations" path="/api/restify/localizations" id="df9d59a8-273d-4f13-a2a8-3eb31096054f">
+  <con:settings id="f1fb906e-0572-4966-a739-a562cdcf43d4">
+    <con:setting id="df9d59a8-273d-4f13-a2a8-3eb31096054ffileName">Localizations1</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="Localizations" id="d9f50ff0-7e7f-45a7-8dba-2e3bc649903b" method="POST">
+    <con:settings/>
+    <con:parameters>
+      <con:parameter>
+        <con:name>Content-Type</con:name>
+        <con:value>application/json</con:value>
+        <con:style>HEADER</con:style>
+        <con:default/>
+        <con:path xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter>
+        <con:name>Accept</con:name>
+        <con:value>application/json</con:value>
+        <con:style>HEADER</con:style>
+        <con:default/>
+        <con:path xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+    </con:parameters>
+    <con:request name="POST Store Localizations Copy" id="e503282c-e6dc-49a9-885b-049a8a5b8afd" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>${#Project#baseUrl}</con:endpoint>
+      <con:request>{\r
+    "name": "Edificio B otro",\r
+    "code": "01/0327564654663",\r
+    "description": "Edificio B otro",\r
+    "parent_id": 3,\r
+    "localization_type_id": 4\r
+}</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters>
+        <con:entry key="Accept" value="application/json"/>
+        <con:entry key="Content-Type" value="application/json"/>
+      </con:parameters>
+      <con:parameterOrder>
+        <con:entry>Content-Type</con:entry>
+        <con:entry>Accept</con:entry>
+      </con:parameterOrder>
+    </con:request>
+  </con:method>
+</con:resource>

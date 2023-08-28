@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="Localization-types" path="/api/restify/localization-types" id="e1322740-4ef4-4be7-b06b-3523ff6fd6db">
+  <con:settings id="84472745-960a-48d6-a5a9-f5833b2fac42">
+    <con:setting id="e1322740-4ef4-4be7-b06b-3523ff6fd6dbfileName">Localization-types</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="Localization-types" id="262472c1-db87-4936-85f9-98d64f67aa1e" method="GET">
+    <con:settings/>
+    <con:parameters/>
+    <con:request name="GET Localizations type" id="12d7f4cb-914e-4bd3-8302-ecb22a911f34" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>${#Project#baseUrl}</con:endpoint>
+      <con:credentials/>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+  <con:method name="Localization-types 2" id="654a2fce-e9ce-4038-9130-1d4433fbf3d5" method="GET">
+    <con:settings/>
+    <con:parameters>
+      <con:parameter>
+        <con:name>Content-Type</con:name>
+        <con:value>application/json</con:value>
+        <con:style>HEADER</con:style>
+        <con:default/>
+        <con:path xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter>
+        <con:name>Accept</con:name>
+        <con:value>application/json</con:value>
+        <con:style>HEADER</con:style>
+        <con:default/>
+        <con:path xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+    </con:parameters>
+    <con:request name="GET Tags" id="ce820707-63ca-4699-b6cb-9166f0d3acfa" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>${#Project#baseUrl}</con:endpoint>
+      <con:credentials/>
+      <con:parameters>
+        <con:entry key="Accept" value="application/json"/>
+        <con:entry key="Content-Type" value="application/json"/>
+      </con:parameters>
+      <con:parameterOrder>
+        <con:entry>Content-Type</con:entry>
+        <con:entry>Accept</con:entry>
+      </con:parameterOrder>
+    </con:request>
+  </con:method>
+</con:resource>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="Actions" path="/api/restify/assets/actions" id="524a972e-1361-4f16-b03a-b978a9c5e0ff">
+  <con:settings id="2ae979e7-37af-452e-848c-1f4e94f648df">
+    <con:setting id="524a972e-1361-4f16-b03a-b978a9c5e0fffileName">Actions3</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="Actions" id="3f62d849-da79-4880-9d77-4beb2d166b28" method="POST">
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>action</con:name>
+        <con:value>import-update</con:value>
+        <con:style>QUERY</con:style>
+        <con:default>import-update</con:default>
+        <con:path xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+    </con:parameters>
+    <con:request name="import asset/ Import file" id="1ff7b8ae-c428-474b-9849-b182416a7f1a" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>${#Project#baseUrl}</con:endpoint>
+      <con:credentials/>
+      <con:parameters>
+        <con:entry key="action" value="import-update"/>
+      </con:parameters>
+      <con:parameterOrder>
+        <con:entry>action</con:entry>
+      </con:parameterOrder>
+    </con:request>
+  </con:method>
+  <con:method name="Actions 2" id="305bc85d-f08e-47f3-93ed-2bf6b873b9c0" method="POST">
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>action</con:name>
+        <con:value>import-photos-update</con:value>
+        <con:style>QUERY</con:style>
+        <con:default>import-photos-update</con:default>
+        <con:path xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+    </con:parameters>
+    <con:request name="import asset/ Import media" id="ebb2b697-6e80-41a4-85e0-399e2c18d684" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>${#Project#baseUrl}</con:endpoint>
+      <con:credentials/>
+      <con:parameters>
+        <con:entry key="action" value="import-photos-update"/>
+      </con:parameters>
+      <con:parameterOrder>
+        <con:entry>action</con:entry>
+      </con:parameterOrder>
+    </con:request>
+  </con:method>
+</con:resource>

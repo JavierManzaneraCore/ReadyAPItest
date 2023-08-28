@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="Activated" path="/api/security/user/12/activated" id="5f374409-6e4c-4000-9816-033d9ab28c6e">
+  <con:settings id="97e81e0a-2a7a-428c-b291-f3281376ee90">
+    <con:setting id="5f374409-6e4c-4000-9816-033d9ab28c6efileName">Activated1</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="Activated" id="4606bbb4-aca6-417c-aa24-8b1f4e0b5be8" method="POST">
+    <con:settings/>
+    <con:parameters>
+      <con:parameter>
+        <con:name>Accept</con:name>
+        <con:value>application/json</con:value>
+        <con:style>HEADER</con:style>
+        <con:default/>
+        <con:path xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+    </con:parameters>
+    <con:request name="Activated" id="afe6423b-fd97-4fe7-8e6e-d9f2774be8eb" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>${#Project#baseUrl}</con:endpoint>
+      <con:credentials/>
+      <con:parameters>
+        <con:entry key="Accept" value="application/json"/>
+      </con:parameters>
+      <con:parameterOrder>
+        <con:entry>Accept</con:entry>
+      </con:parameterOrder>
+    </con:request>
+  </con:method>
+</con:resource>

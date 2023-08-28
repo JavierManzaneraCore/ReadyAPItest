@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:con="http://eviware.com/soapui/config" name="4" path="/api/restify/models/4" id="2cbfc027-e9c7-49a2-a5fa-dbd1ccd7b67b">
+  <con:settings id="e464c741-1e2d-412a-824e-540f80af480b">
+    <con:setting id="2cbfc027-e9c7-49a2-a5fa-dbd1ccd7b67bfileName">4</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="4" id="88e66edf-208d-4dee-8b09-a1773f9c9d01" method="DELETE">
+    <con:settings/>
+    <con:parameters/>
+    <con:request name="GET Models" id="6a728019-caa7-4d2f-9845-93bfabc894ce" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>${#Project#baseUrl}</con:endpoint>
+      <con:request>{\r
+    \r
+}</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

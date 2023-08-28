@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:con="http://eviware.com/soapui/config" name="Characteristics-cars" path="/api/restify/characteristics-cars" id="da03a233-92e6-478f-baf5-6d242a7f1fac">
+  <con:settings id="79d88998-5081-428e-a4ed-438846578c62">
+    <con:setting id="da03a233-92e6-478f-baf5-6d242a7f1facfileName">Characteristics-cars</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="Characteristics-cars" id="80ca6963-bccb-4dc0-826c-0edbf3e7046c" method="GET">
+    <con:settings/>
+    <con:parameters/>
+    <con:request name="Cars" id="40e1fd20-bc46-4d7f-8934-fb63dd28ac5f" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>${#Project#baseUrl}</con:endpoint>
+      <con:credentials/>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

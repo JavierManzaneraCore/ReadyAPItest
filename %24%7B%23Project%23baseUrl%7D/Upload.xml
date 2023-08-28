@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:con="http://eviware.com/soapui/config" name="Upload" path="/api/media/upload" id="8160d98f-92c3-459c-a951-281f81a53f03">
+  <con:settings id="230a4575-c96c-4afc-80cf-f4c14229f172">
+    <con:setting id="8160d98f-92c3-459c-a951-281f81a53f03fileName">Upload</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="Upload" id="d2f25170-8d2f-4f67-ba95-5485e29cc2de" method="POST">
+    <con:settings/>
+    <con:parameters/>
+    <con:request name="POST /api/media/upload" id="c849620f-c7a7-42a6-8070-b26d47893ff7" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>${#Project#baseUrl}</con:endpoint>
+      <con:request>{\r
+\r
+    "medias": [\r
+        {\r
+            "mediaType": "image/s3",\r
+            "instance": "asset",\r
+            "id": "2",\r
+            "path": "media/assets/100001/image_1671452218909.jpeg",\r
+            "thumbnails" : false,\r
+            "sync" : "image"\r
+        }\r
+    ]\r
+}</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

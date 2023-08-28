@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:con="http://eviware.com/soapui/config" name="Localizations" path="/api/restify/localizations/" id="f764b4ff-a866-4bc7-b611-90c69a33ac88">
+  <con:settings id="f842d8bf-1fc4-4378-914f-336b6ccb8bf4">
+    <con:setting id="f764b4ff-a866-4bc7-b611-90c69a33ac88fileName">Localizations</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="Localizations" id="ac5fff06-4ef4-44a2-b264-28c4151b68bd" method="GET">
+    <con:settings/>
+    <con:parameters/>
+    <con:request name="GET Localizations" id="b3c10789-9d2f-4d7e-92cd-431a8596a4c7" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>${#Project#baseUrl}</con:endpoint>
+      <con:credentials/>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

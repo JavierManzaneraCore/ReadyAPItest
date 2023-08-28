@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="1" path="/api/restify/assets/1" id="54f5186a-ee65-49eb-ae41-64c8119806bc">
+  <con:settings id="fd6cfab4-13c5-4582-8fbe-679e217609ef">
+    <con:setting id="54f5186a-ee65-49eb-ae41-64c8119806bcfileName">1</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="1" id="1806f7ef-c583-46c4-afa8-7d4bd8211615" method="GET">
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>related</con:name>
+        <con:value>owns_relations.related[code],owns_relations.related.type[alias|description],owns_relations.related.tag</con:value>
+        <con:style>QUERY</con:style>
+        <con:default>owns_relations.related[code],owns_relations.related.type[alias|description],owns_relations.related.tag</con:default>
+        <con:path xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter>
+        <con:name>Content-Type</con:name>
+        <con:value>application/json</con:value>
+        <con:style>HEADER</con:style>
+        <con:default/>
+        <con:path xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter>
+        <con:name>Accept</con:name>
+        <con:value>application/json</con:value>
+        <con:style>HEADER</con:style>
+        <con:default/>
+        <con:path xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+    </con:parameters>
+    <con:request name="GET Asset relations" id="75b6e618-b9bb-4be5-b547-5bf62ed2f40c" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://${#Project#baseUrl}</con:endpoint>
+      <con:credentials/>
+      <con:parameters>
+        <con:entry key="related" value="owns_relations.related[code],owns_relations.related.type[alias|description],owns_relations.related.tag"/>
+        <con:entry key="Accept" value="application/json"/>
+        <con:entry key="Content-Type" value="application/json"/>
+      </con:parameters>
+      <con:parameterOrder>
+        <con:entry>related</con:entry>
+        <con:entry>Content-Type</con:entry>
+        <con:entry>Accept</con:entry>
+      </con:parameterOrder>
+    </con:request>
+  </con:method>
+</con:resource>

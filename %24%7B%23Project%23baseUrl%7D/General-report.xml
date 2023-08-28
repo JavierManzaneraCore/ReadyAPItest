@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:con="http://eviware.com/soapui/config" name="General-report" path="/api/restify/assets/getters/general-report" id="113efe1b-5fea-43c2-8daa-1338bd68a79d">
+  <con:settings id="c3ee2030-1217-4a6e-b734-8f9572aeb768">
+    <con:setting id="113efe1b-5fea-43c2-8daa-1338bd68a79dfileName">General-report</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="General-report" id="d21ea9ad-6dbf-45d8-80a3-7c6df92a1082" method="GET">
+    <con:settings/>
+    <con:parameters/>
+    <con:request name="GET generalReport" id="8fe8bc58-d2ef-4c28-ad40-992b7c80182c" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>${#Project#baseUrl}</con:endpoint>
+      <con:credentials/>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

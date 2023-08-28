@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="Assets" path="/api/restify/assets" id="ac962601-4b38-4e05-8a34-4c05f56c12f9">
+  <con:settings id="b168ec5e-7892-4b09-b1f3-84840f297ccc">
+    <con:setting id="ac962601-4b38-4e05-8a34-4c05f56c12f9fileName">Assets</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="Assets" id="7e10f47b-f204-4c6a-bd5d-00119763265a" method="POST">
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>include</con:name>
+        <con:value>tags,type,localizations.children,users,model.brands</con:value>
+        <con:style>QUERY</con:style>
+        <con:default>tags,type,localizations.children,users,model.brands</con:default>
+        <con:path xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter>
+        <con:name>Content-Type</con:name>
+        <con:value>application/json</con:value>
+        <con:style>HEADER</con:style>
+        <con:default/>
+        <con:path xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter>
+        <con:name>Accept</con:name>
+        <con:value>application/json</con:value>
+        <con:style>HEADER</con:style>
+        <con:default/>
+        <con:path xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+    </con:parameters>
+    <con:request name="POST Asset Store" id="5e4c0e17-6160-4025-b3da-8dac98bb9fb6" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://${#Project#baseUrl}</con:endpoint>
+      <con:request>{\r
+    "tag_id": "Virtual",\r
+    "sub_family_type_id": 1,\r
+    "localization_id": 2,\r
+    //"incidence_id": [1],\r
+    "ch_table_id": [1],\r
+    "ch_shelving_id": [1],\r
+    "ch_chair_id": [1],\r
+    "ch_furniture_id": [1],\r
+    "ch_bed_id": [1],\r
+    "ch_car_id": [1],\r
+    "ch_painting_id": [1],\r
+    "ch_lamp_id": [1],\r
+    //"ch_descriptive_id": [1],\r
+    "color_id": [1],\r
+  //  "material_id": [1],\r
+    "tag_localization": "ASSET",\r
+    "old_tag": "Lorem ipsu",\r
+    "denomination": "Lorem ipsu",\r
+    //"length": "Lorem ipsu",\r
+    "measures": "Lorem ipsu",\r
+    "model_id": 2,\r
+    "serial_number": "Lorem ipsu",\r
+    "registration_number": "Lorem ipsu",\r
+    "frame_number": "Lorem ipsu",\r
+    "author": "Lorem ipsu",\r
+    "technique": "Lorem ipsu",\r
+    "kind": "Lorem ipsu",\r
+    "numbering": "Lorem ipsu",\r
+    "nominal_value": 1200,\r
+    "expedient": "Lorem ipsu",\r
+    "albaran_number": "Lorem ipsu",\r
+    "invoice_number": "Lorem ipsu",\r
+    "functional_area_id": 1,\r
+    "responsible_people_id": 1,\r
+    "conservation_status_id": 1,\r
+    "value": 1800,\r
+    "description": "Lorem ipsu",\r
+    "cost_center_id": 1,\r
+    "entity_id": 1,\r
+    "hash": "f24ade5f2b2b333c4c1423aa45c3db123927491"\r
+}</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters>
+        <con:entry key="include" value="tags,type,localizations.children,users,model.brands"/>
+        <con:entry key="Accept" value="application/json"/>
+        <con:entry key="Content-Type" value="application/json"/>
+      </con:parameters>
+      <con:parameterOrder>
+        <con:entry>include</con:entry>
+        <con:entry>Content-Type</con:entry>
+        <con:entry>Accept</con:entry>
+      </con:parameterOrder>
+    </con:request>
+  </con:method>
+</con:resource>

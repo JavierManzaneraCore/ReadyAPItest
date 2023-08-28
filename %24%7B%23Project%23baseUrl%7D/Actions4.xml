@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="Actions" path="/api/restify/generic-asset-saps/actions" id="9727e1ef-d8ec-49b4-8075-ff921dee2a5b">
+  <con:settings id="3b2c8ba5-234a-49fa-b37b-d211ec648c5f">
+    <con:setting id="9727e1ef-d8ec-49b4-8075-ff921dee2a5bfileName">Actions4</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="Actions" id="4feaa82f-a364-4ca7-8dee-409c1f7322cf" method="POST">
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>action</con:name>
+        <con:value>sap-import</con:value>
+        <con:style>QUERY</con:style>
+        <con:default>sap-import</con:default>
+        <con:path xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+    </con:parameters>
+    <con:request name="External data/ Import file" id="44f5c787-9fae-4f74-b5fe-a66782cf0efb" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>${#Project#baseUrl}</con:endpoint>
+      <con:credentials/>
+      <con:parameters>
+        <con:entry key="action" value="sap-import"/>
+      </con:parameters>
+      <con:parameterOrder>
+        <con:entry>action</con:entry>
+      </con:parameterOrder>
+    </con:request>
+  </con:method>
+</con:resource>

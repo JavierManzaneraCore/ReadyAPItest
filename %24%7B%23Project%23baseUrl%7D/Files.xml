@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="Files" path="/api/restify/files" id="82f651ea-0fbb-4f97-801d-fb3333918964">
+  <con:settings id="dbd3d342-db3f-4eea-bc4f-ffe2951095d3">
+    <con:setting id="82f651ea-0fbb-4f97-801d-fb3333918964fileName">Files</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="Files" id="f24b0866-4305-4fb1-91ef-836b1e4addea" method="GET">
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>asset_id</con:name>
+        <con:value>5</con:value>
+        <con:style>QUERY</con:style>
+        <con:default>5</con:default>
+        <con:path xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>include</con:name>
+        <con:value>doc_types</con:value>
+        <con:style>QUERY</con:style>
+        <con:default>doc_types</con:default>
+        <con:path xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+    </con:parameters>
+    <con:request name="Files index" id="8fc023fa-61d1-4dd7-8f84-80cce13c3073" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>${#Project#baseUrl}</con:endpoint>
+      <con:credentials/>
+      <con:parameters>
+        <con:entry key="include" value="doc_types"/>
+        <con:entry key="asset_id" value="5"/>
+      </con:parameters>
+      <con:parameterOrder>
+        <con:entry>asset_id</con:entry>
+        <con:entry>include</con:entry>
+      </con:parameterOrder>
+    </con:request>
+  </con:method>
+  <con:method name="Files 2" id="5b96110f-b511-437c-95c0-b9056293a861" method="POST">
+    <con:settings/>
+    <con:parameters/>
+    <con:request name="Files create" id="789e4c25-4b2c-46e5-85f0-94b09bd085d2" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>${#Project#baseUrl}</con:endpoint>
+      <con:request>{\r
+    "description": "Des",\r
+    "doc_type_id": "Contrato",\r
+    // "file_size": "opcional,numerico",\r
+    // "is_thumbnails": "opcional,bool",\r
+    "fileable_id": 5, //"id del modelo al que se va a asociar",\r
+    "name_original": "nombre original.jpeg",\r
+    "name": "nombre del fichero.jpeg",\r
+    "file_type": "image/s3", //"corresponde al atributo mediaType del endpoint de crear nomencladores de forma manual",\r
+    "path": "media/assets/V000005/image_1690214571556.jpeg",\r
+    "fileable_type": "asset" //"corresponde al atributo instance del endpoint de crear nomencladores de forma manual"\r
+}</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

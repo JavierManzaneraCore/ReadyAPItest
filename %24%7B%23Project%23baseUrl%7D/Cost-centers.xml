@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="Cost-centers" path="/api/restify/cost-centers" id="995c5cac-20e3-4497-a33f-53d4065a1cb0">
+  <con:settings id="21a29719-b8e4-433f-885f-04dffe57f77b">
+    <con:setting id="995c5cac-20e3-4497-a33f-53d4065a1cb0fileName">Cost-centers</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="Cost-centers" id="acd28675-e848-4bb4-83c6-b902848ea254" method="GET">
+    <con:settings/>
+    <con:parameters/>
+    <con:request name="cost_centers" id="bc7e0103-c81b-4a7b-913a-dd410ea96b7e" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>${#Project#baseUrl}</con:endpoint>
+      <con:credentials/>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+  <con:method name="Cost-centers 2" id="1a5fb7e1-e6a6-412c-9f7c-43647fd0a66c" method="GET">
+    <con:settings/>
+    <con:parameters/>
+    <con:request name="colors" id="dc62923a-484b-4a13-9524-de5e58621f0f" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>${#Project#baseUrl}</con:endpoint>
+      <con:credentials/>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+  <con:method name="Cost-centers 3" id="18de2bb2-22be-4e05-8662-1e1c2d26fea7" method="POST">
+    <con:settings/>
+    <con:parameters>
+      <con:parameter>
+        <con:name>Accept</con:name>
+        <con:value>application/json</con:value>
+        <con:style>HEADER</con:style>
+        <con:default/>
+        <con:path xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+    </con:parameters>
+    <con:request name="nomeclator store" id="d54f08f6-2af6-43f6-908c-55aafa0ea50d" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>${#Project#baseUrl}</con:endpoint>
+      <con:request>{\r
+    "name": "CeCo IT3 342",\r
+   \r
+    "description": "Centro de coste departamento de informática"\r
+}</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters>
+        <con:entry key="Accept" value="application/json"/>
+      </con:parameters>
+      <con:parameterOrder>
+        <con:entry>Accept</con:entry>
+      </con:parameterOrder>
+    </con:request>
+  </con:method>
+</con:resource>

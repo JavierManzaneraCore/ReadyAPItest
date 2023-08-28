@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="5" path="/api/restify/assets/5" id="da3c0fe6-5ba6-4e9a-b734-cc2f0f043328">
+  <con:settings id="6af567b5-4bff-4f53-b25a-4eed0a3eccaa">
+    <con:setting id="da3c0fe6-5ba6-4e9a-b734-cc2f0f043328fileName">52</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="5" id="81c6eced-5090-4605-80ec-aee6cec6250d" method="PUT">
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>include</con:name>
+        <con:value>tags,type,localizations</con:value>
+        <con:style>QUERY</con:style>
+        <con:default>tags,type,localizations</con:default>
+        <con:path xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter>
+        <con:name>Content-Type</con:name>
+        <con:value>application/json</con:value>
+        <con:style>HEADER</con:style>
+        <con:default/>
+        <con:path xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter>
+        <con:name>Accept</con:name>
+        <con:value>application/json</con:value>
+        <con:style>HEADER</con:style>
+        <con:default/>
+        <con:path xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+    </con:parameters>
+    <con:request name="PATCH Asset EDIT all field" id="958e8feb-f274-4b81-b2a8-7500302fa45a" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>${#Project#baseUrl}</con:endpoint>
+      <con:request>{\r
+    "internal_code": "internal_code",\r
+    "observation": "observation",\r
+    "incidence_id": "Superficie insuficiente para etiquetado",\r
+    "ch_table_id": "ch_lamp_id",\r
+    "ch_shelving_id": "ch_lamp_id",\r
+    "ch_chair_id": "ch_lamp_id",\r
+    "ch_furniture_id": "ch_lamp_id",\r
+    "ch_bed_id": "ch_lamp_id",\r
+    "ch_car_id": "ch_lamp_id",\r
+    "ch_painting_id": "ch_lamp_id",\r
+    "ch_lamp_id": "ch_lamp_id",\r
+    // "ch_table_id": [\r
+    //     1\r
+    // ],\r
+    // "ch_shelving_id": [\r
+    //     1\r
+    // ],\r
+    // "ch_chair_id": [\r
+    //     1\r
+    // ],\r
+    // "ch_furniture_id": [\r
+    //     1\r
+    // ],\r
+    // "ch_bed_id": [\r
+    //     1\r
+    // ],\r
+    // "ch_car_id": [\r
+    //     1\r
+    // ],\r
+    // "ch_painting_id": [\r
+    //     1\r
+    // ],\r
+    // "ch_lamp_id": [\r
+    //     1\r
+    // ],\r
+    "ch_descriptive_id": "Ch Descriptiva 2",\r
+    // "color_id": "Azul",\r
+    // "material_id": "Madera",\r
+    // "incidence_id": [\r
+    //     1\r
+    // ],\r
+    // "ch_descriptive_id": [\r
+    //     1\r
+    // ],\r
+    // "color_id": [\r
+    //     1\r
+    // ],\r
+    // "material_id": [\r
+    //     1\r
+    // ],\r
+    "tag_localization": "tag_localization",\r
+    "old_tag": "old_tag",\r
+    "denomination": "denomination",\r
+    "length": 100,\r
+    "measures": "10x10x10",\r
+    "model_id": "nuevo modelo",\r
+    "brand_id": "nueva marca",\r
+    "serial_number": "serial_number",\r
+    "registration_number": "registration_number",\r
+    "frame_number": "frame_number",\r
+    "author": "autor",\r
+    "technique": "tecnica",\r
+    "kind": "kind",\r
+    "numbering": "1asd2344",\r
+    "nominal_value": "999.99",\r
+    "expedient": "Ex 213",\r
+    "albaran_number": "A123",\r
+    "invoice_number": "I123",\r
+    "functional_area_id": 1,\r
+    "responsible_people_id": 1,\r
+    "conservation_status_id": 1,\r
+    "value": 1000,\r
+    "description": "description",\r
+    "cost_center_id": "centro de coste 2",\r
+    "entity_id": 1,\r
+    "operation": "general_rectification"\r
+}</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters>
+        <con:entry key="include" value="tags,type,localizations"/>
+        <con:entry key="Accept" value="application/json"/>
+        <con:entry key="Content-Type" value="application/json"/>
+      </con:parameters>
+      <con:parameterOrder>
+        <con:entry>include</con:entry>
+        <con:entry>Content-Type</con:entry>
+        <con:entry>Accept</con:entry>
+      </con:parameterOrder>
+    </con:request>
+  </con:method>
+</con:resource>

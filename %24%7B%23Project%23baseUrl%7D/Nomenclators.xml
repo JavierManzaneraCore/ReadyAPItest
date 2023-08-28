@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:con="http://eviware.com/soapui/config" name="Nomenclators" path="/api/nomenclators" id="8e8cea99-a1c9-43b9-a349-51c11c46a73c">
+  <con:settings id="7bfab0c7-aeb9-4ecc-9cfc-587dc26ec1c7">
+    <con:setting id="8e8cea99-a1c9-43b9-a349-51c11c46a73cfileName">Nomenclators</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="Nomenclators" id="7c04e3d4-3ee9-45bc-8124-4378ba2e9375" method="GET">
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/html; charset=UTF-8</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:element>html</con:element>
+    </con:representation>
+    <con:request name="GET Nomeclators" id="fc07b031-6b84-4470-89a2-24cadce5cd41" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>${#Project#baseUrl}</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

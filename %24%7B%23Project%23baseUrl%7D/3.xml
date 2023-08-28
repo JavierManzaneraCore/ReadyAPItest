@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:con="http://eviware.com/soapui/config" name="3" path="/api/restify/localizations/3" id="88487003-5ac1-4936-99b5-3f825553deec">
+  <con:settings id="eb409c5f-4b53-4d50-bcbe-ac1608be8bac">
+    <con:setting id="88487003-5ac1-4936-99b5-3f825553deecfileName">3</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="3" id="e49af27b-430a-466f-bc9a-56549efbd1d8" method="DELETE">
+    <con:settings/>
+    <con:parameters/>
+    <con:request name="DELETE Ubi" id="e14c9b51-7c18-4cc6-8d46-43c47e1c0086" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>${#Project#baseUrl}</con:endpoint>
+      <con:credentials/>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

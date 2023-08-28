@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="Tag-ranges" path="/api/restify/tag-ranges" id="ebbf4026-ab60-4e5b-8140-406356c99751">
+  <con:settings id="50734fcd-f723-4914-9d88-5bb5a83eda14">
+    <con:setting id="ebbf4026-ab60-4e5b-8140-406356c99751fileName">Tag-ranges</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="Tag-ranges" id="2dd9e48d-0e6f-4844-99e0-ad47f0e0a747" method="GET">
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>include</con:name>
+        <con:value>tag_technologies</con:value>
+        <con:style>QUERY</con:style>
+        <con:default>tag_technologies</con:default>
+        <con:path xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter>
+        <con:name>Content-Type</con:name>
+        <con:value>application/json</con:value>
+        <con:style>HEADER</con:style>
+        <con:default/>
+        <con:path xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter>
+        <con:name>Accept</con:name>
+        <con:value>application/json</con:value>
+        <con:style>HEADER</con:style>
+        <con:default/>
+        <con:path xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+    </con:parameters>
+    <con:request name="GET Tags Range" id="cf213a49-5da8-4d0c-8194-fcdcf886b2cd" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>${#Project#baseUrl}</con:endpoint>
+      <con:credentials/>
+      <con:parameters>
+        <con:entry key="include" value="tag_technologies"/>
+        <con:entry key="Accept" value="application/json"/>
+        <con:entry key="Content-Type" value="application/json"/>
+      </con:parameters>
+      <con:parameterOrder>
+        <con:entry>include</con:entry>
+        <con:entry>Content-Type</con:entry>
+        <con:entry>Accept</con:entry>
+      </con:parameterOrder>
+    </con:request>
+  </con:method>
+</con:resource>

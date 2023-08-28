@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:con="http://eviware.com/soapui/config" name="Families" path="/api/restify/families" id="95c9b2a3-369b-47a4-8797-20660670ad2b">
+  <con:settings id="0ba7ae90-e57d-408f-8f6a-7de3bc26ea30">
+    <con:setting id="95c9b2a3-369b-47a4-8797-20660670ad2bfileName">Families</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="Families" id="93838208-57ef-4688-bfb5-c727c5385c15" method="GET">
+    <con:settings/>
+    <con:parameters/>
+    <con:request name="GET families" id="584347ca-e7f9-46d3-8eb5-bb3feaec0fb7" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>${#Project#baseUrl}</con:endpoint>
+      <con:credentials/>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

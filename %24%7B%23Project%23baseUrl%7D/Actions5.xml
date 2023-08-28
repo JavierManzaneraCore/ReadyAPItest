@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="Actions" path="/api/restify/patrimonial-operations/actions" id="b5f7625c-17be-430e-9caf-acca4c83f242">
+  <con:settings id="96875b4f-53ae-4ba3-8c93-3657ecbf2181">
+    <con:setting id="b5f7625c-17be-430e-9caf-acca4c83f242fileName">Actions5</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="Actions" id="78d2a378-0895-48b2-b624-86391d6039f8" method="POST">
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>action</con:name>
+        <con:value>baja</con:value>
+        <con:style>QUERY</con:style>
+        <con:default>baja</con:default>
+        <con:path xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+    </con:parameters>
+    <con:request name="OP baja" id="1ebc9f84-f79e-4c62-bb1c-51804d64d346" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>${#Project#baseUrl}</con:endpoint>
+      <con:request>{\r
+    "repositories":[3]\r
+}</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters>
+        <con:entry key="action" value="baja"/>
+      </con:parameters>
+      <con:parameterOrder>
+        <con:entry>action</con:entry>
+      </con:parameterOrder>
+    </con:request>
+  </con:method>
+  <con:method name="Actions 2" id="41558687-f164-4621-8e37-ff07e58d6b2a" method="POST">
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>action</con:name>
+        <con:value>reallocations_summary</con:value>
+        <con:style>QUERY</con:style>
+        <con:default>reallocations_summary</con:default>
+        <con:path xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>related</con:name>
+        <con:value>users,validated_by, asset</con:value>
+        <con:style>QUERY</con:style>
+        <con:default>users,validated_by, asset</con:default>
+        <con:path xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+    </con:parameters>
+    <con:request name="OP resumen de traslados por id de ubicación" id="e2465289-4c4f-4a00-abd0-dafe405b5844" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>${#Project#baseUrl}</con:endpoint>
+      <con:request>{\r
+    "localization_id": 5\r
+}</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters>
+        <con:entry key="related" value="users,validated_by, asset"/>
+        <con:entry key="action" value="reallocations_summary"/>
+      </con:parameters>
+      <con:parameterOrder>
+        <con:entry>action</con:entry>
+        <con:entry>related</con:entry>
+      </con:parameterOrder>
+    </con:request>
+  </con:method>
+</con:resource>

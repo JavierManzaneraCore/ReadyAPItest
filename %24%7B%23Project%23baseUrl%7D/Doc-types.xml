@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:con="http://eviware.com/soapui/config" name="Doc-types" path="/api/restify/files/getters/doc-types" id="21017b6d-dcfb-44c0-b7e0-d25dfcf51338">
+  <con:settings id="761e4bd5-e1d8-429b-9bc5-e3ef5d398b0f">
+    <con:setting id="21017b6d-dcfb-44c0-b7e0-d25dfcf51338fileName">Doc-types</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="Doc-types" id="0072e0f5-0b4d-4d86-a6a2-d6f21ff5fe3a" method="GET">
+    <con:settings/>
+    <con:parameters/>
+    <con:request name="doc-types" id="58a266f4-d047-488a-a171-00f37c1d670b" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>${#Project#baseUrl}</con:endpoint>
+      <con:credentials/>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

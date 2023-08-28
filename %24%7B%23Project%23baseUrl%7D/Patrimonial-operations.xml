@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="Patrimonial-operations" path="/api/restify/patrimonial-operations" id="1a09c5ec-814d-4d46-92d6-14d52ca41acc">
+  <con:settings id="164572b2-2aaa-456d-bcf7-d4d44017ec0f">
+    <con:setting id="1a09c5ec-814d-4d46-92d6-14d52ca41accfileName">Patrimonial-operations</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="Patrimonial-operations" id="a08d05a4-9103-4099-ab7e-88b38df5f386" method="GET">
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>search_by</con:name>
+        <con:value>2023_OP00012</con:value>
+        <con:style>QUERY</con:style>
+        <con:default>2023_OP00012</con:default>
+        <con:path xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+    </con:parameters>
+    <con:request name="GET OP" id="f805f3e7-f0ba-4dd5-b4f5-44ffb03758d3" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>${#Project#baseUrl}</con:endpoint>
+      <con:credentials/>
+      <con:parameters>
+        <con:entry key="search_by" value="2023_OP00012"/>
+      </con:parameters>
+      <con:parameterOrder>
+        <con:entry>search_by</con:entry>
+      </con:parameterOrder>
+    </con:request>
+  </con:method>
+  <con:method name="Patrimonial-operations 2" id="0254e326-06d5-457f-adb8-981566cd34d3" method="GET">
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>search_by</con:name>
+        <con:value>2023_OP00012</con:value>
+        <con:style>QUERY</con:style>
+        <con:default>2023_OP00012</con:default>
+        <con:path xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+    </con:parameters>
+    <con:request name="GET OP Type" id="08a9b651-f63f-4ba9-84e3-5c9572658ed8" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>${#Project#baseUrl}</con:endpoint>
+      <con:credentials/>
+      <con:parameters>
+        <con:entry key="search_by" value="2023_OP00012"/>
+      </con:parameters>
+      <con:parameterOrder>
+        <con:entry>search_by</con:entry>
+      </con:parameterOrder>
+    </con:request>
+  </con:method>
+</con:resource>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="90" path="/api/restify/sub-families/90" id="add76a17-20f6-4726-8a56-65e3ed3163f9">
+  <con:settings id="3b1e52be-6873-4909-b212-681b83541414">
+    <con:setting id="add76a17-20f6-4726-8a56-65e3ed3163f9fileName">90</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="90" id="b8d03b8e-7585-46f4-a2ce-dd3968af72cd" method="DELETE">
+    <con:settings/>
+    <con:parameters>
+      <con:parameter>
+        <con:name>Content-Type</con:name>
+        <con:value>application/json</con:value>
+        <con:style>HEADER</con:style>
+        <con:default/>
+        <con:path xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter>
+        <con:name>Accept</con:name>
+        <con:value>application/json</con:value>
+        <con:style>HEADER</con:style>
+        <con:default/>
+        <con:path xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+    </con:parameters>
+    <con:request name="POST SubFamily" id="1ad90eef-a58c-4920-9bbd-76c70c4844d4" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>${#Project#baseUrl}</con:endpoint>
+      <con:request>{\r
+    "code": "190301",\r
+    "id": 91,\r
+    "alias": "Software (sistemas y programas informáticos)",\r
+    "family_id": 42,\r
+    "description": "Software (sistemas y programas informáticos)"\r
+}</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters>
+        <con:entry key="Accept" value="application/json"/>
+        <con:entry key="Content-Type" value="application/json"/>
+      </con:parameters>
+      <con:parameterOrder>
+        <con:entry>Content-Type</con:entry>
+        <con:entry>Accept</con:entry>
+      </con:parameterOrder>
+    </con:request>
+  </con:method>
+</con:resource>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="1" path="/api/restify/assets/1" id="ccaefbaa-9304-4b5d-8ea2-3f53f73191b4">
+  <con:settings id="82049474-7f5c-4e10-ac48-d96484d8d8cf">
+    <con:setting id="ccaefbaa-9304-4b5d-8ea2-3f53f73191b4fileName">14</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="1" id="1ee4e23f-e6dc-4042-9026-671d22aae71b" method="GET">
+    <con:settings/>
+    <con:parameters/>
+    <con:request name="Assets/Show" id="03fc8131-1964-48e8-8934-7ecb8e22072b" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>${#Project#baseUrl}</con:endpoint>
+      <con:credentials/>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+  <con:method name="1 2" id="9200dc7c-53b1-4f33-a562-38fd5d04be9f" method="POST">
+    <con:settings/>
+    <con:parameters>
+      <con:parameter>
+        <con:name>Content-Type</con:name>
+        <con:value>application/json</con:value>
+        <con:style>HEADER</con:style>
+        <con:default/>
+        <con:path xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter>
+        <con:name>Accept</con:name>
+        <con:value>application/json</con:value>
+        <con:style>HEADER</con:style>
+        <con:default/>
+        <con:path xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+    </con:parameters>
+    <con:request name="PATCH Asset EDIT" id="e05390f2-1a06-4623-a5de-0174442daf77" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>${#Project#baseUrl}</con:endpoint>
+      <con:request>{\r
+    //    "tag_id": "9",\r
+    // "operation": "retagging"\r
+    "localization_id":6,\r
+    //"sub_family_type_id": 1,\r
+    //"denomination": "euddsru",\r
+    "operation": "reallocation"\r
+}\r
+/*\r
+    "tag_localization": "editado",\r
+    "incidence_id": [],\r
+    "conservation_status_id": 1,*/</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters>
+        <con:entry key="Accept" value="application/json"/>
+        <con:entry key="Content-Type" value="application/json"/>
+      </con:parameters>
+      <con:parameterOrder>
+        <con:entry>Content-Type</con:entry>
+        <con:entry>Accept</con:entry>
+      </con:parameterOrder>
+    </con:request>
+  </con:method>
+</con:resource>

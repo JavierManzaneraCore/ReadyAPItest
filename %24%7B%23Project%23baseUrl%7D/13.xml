@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:con="http://eviware.com/soapui/config" name="13" path="/api/restify/natures/13" id="e67d8e5c-38b0-4f79-b159-81f32f464de8">
+  <con:settings id="42e21af6-d8ac-4a7a-932f-6d2e4bfe1699">
+    <con:setting id="e67d8e5c-38b0-4f79-b159-81f32f464de8fileName">13</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="13" id="23c58e8a-5284-428e-a2a0-058bee820860" method="GET">
+    <con:settings/>
+    <con:parameters/>
+    <con:request name="GET natures" id="dc137fee-4339-4957-ae10-5310e829d3a9" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>${#Project#baseUrl}</con:endpoint>
+      <con:credentials/>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

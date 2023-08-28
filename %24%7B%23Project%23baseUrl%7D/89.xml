@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:con="http://eviware.com/soapui/config" name="89" path="/api/restify/sub-family-types/89" id="5a438539-4571-4c49-8dcb-bf33747e5575">
+  <con:settings id="1d23cd17-6749-4ac1-994e-4d56e22344bb">
+    <con:setting id="5a438539-4571-4c49-8dcb-bf33747e5575fileName">89</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="89" id="cdc2f6e3-eb0d-4ef9-a991-5da5dfe168a4" method="GET">
+    <con:settings/>
+    <con:parameters/>
+    <con:request name="GET Subfamilies type" id="489f11fa-ee42-4b57-ad28-6d1f0a2e3b30" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>${#Project#baseUrl}</con:endpoint>
+      <con:credentials/>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

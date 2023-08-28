@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="Login" path="/api/security/login" id="d313d8b7-52fa-4dd3-8f9a-ac21970288cc">
+  <con:settings id="bba5b4a6-3e4b-40b0-997f-4b3dd140db7e">
+    <con:setting id="d313d8b7-52fa-4dd3-8f9a-ac21970288ccfileName">Login</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="Login" id="ea9f838b-56b0-4586-b311-023de5c13fd9" method="POST">
+    <con:settings>
+      <con:setting id="RecordResponseRepresentations">true</con:setting>
+    </con:settings>
+    <con:parameters>
+      <con:parameter>
+        <con:name>Content-Type</con:name>
+        <con:value>application/json</con:value>
+        <con:style>HEADER</con:style>
+        <con:default/>
+        <con:path xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter>
+        <con:name>Accept</con:name>
+        <con:value>application/json</con:value>
+        <con:style>HEADER</con:style>
+        <con:default/>
+        <con:path xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:element xmlns:log="https://assets-service.coreinvent.es/api/security/login">log:Response</con:element>
+    </con:representation>
+    <con:request name="Login a user." id="61846b38-fbab-428d-a6aa-722ab90ebb84" mediaType="application/json" postQueryString="false">
+      <con:settings>
+        <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+      </con:settings>
+      <con:endpoint>${#Project#baseUrl}</con:endpoint>
+      <con:request>{\r
+    "email": "admin@coresolutions.es",\r
+    "password": "Secret.,.123"\r
+}</con:request>
+      <con:originalUri>https://assets-service.coreinvent.es/api/security/login</con:originalUri>
+      <con:credentials>
+        <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters>
+        <con:entry key="Accept" value="application/json"/>
+        <con:entry key="Content-Type" value="application/json"/>
+      </con:parameters>
+      <con:parameterOrder>
+        <con:entry>Content-Type</con:entry>
+        <con:entry>Accept</con:entry>
+      </con:parameterOrder>
+    </con:request>
+  </con:method>
+</con:resource>

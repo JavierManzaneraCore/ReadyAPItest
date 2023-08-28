@@ -1,0 +1,5 @@
+%24%7B%23Project%23baseUrl%7D
+https%3A%2F%2Fblackbox.fast360cloud.com
+%24%7B%23Project%23baseUrl%7Dapi
+http%3A%2F%2F%24%7B%23Project%23baseUrl%7D
+Test-Suite-1
